@@ -1,0 +1,15 @@
+import random
+
+score = 0
+
+while True:
+    bat = int(input("Enter runs (1 to 6): "))
+    bowl = random.randint(1, 6)
+    print("Computer bowled:", bowl)
+
+    if bat == bowl:
+        print("OUT! Final Score:", score)
+        break
+    else:
+        score += bat
+        print("Current Score:", score)
